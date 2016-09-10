@@ -76,7 +76,13 @@ and open tests.html in your browser.
 To get coverage of your code type:
 
 ```bash
-npm run coverage
+npm run cover
+```
+
+To check eslint rules compliance:
+
+```bash
+npm run eslint
 ```
 
 ### What should work out of the box:
