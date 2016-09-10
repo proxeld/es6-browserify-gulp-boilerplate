@@ -82,6 +82,7 @@ gulp.task('js', function () {
         extensions: ['es6'],
         entries: ['src/js/app.es6'],
         // single global variable for the library
+        // this will be available in the browser if bundle will be loaded using html script tag
         standalone: 'LibraryName'
     }))
 });

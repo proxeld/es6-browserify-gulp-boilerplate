@@ -8205,4 +8205,12 @@ describe('Configuration check', function () {
     });
 });
 
+describe('Code', function () {
+    describe('#ourFunction', function () {
+        it('should be able to do all kinds of stuff', function () {
+            (0, _chai.expect)((0, opr.default)(1, 1, opr.sum)).to.eql(2);
+        });
+    });
+});
+
 },{"../src/js/modules/code.es6":41,"chai":5}]},{},[42]);
