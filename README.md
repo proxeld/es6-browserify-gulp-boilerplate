@@ -3,33 +3,66 @@ es6-gulp-browserify-template
 
 ### Getting started
 
-Clone or download repository.
+```bash
+# clone repository
+git clone https://github.com/proxeld/es6-browserify-gulp-boilerplate.git es6-boilerplate
+cd es6-boilerplate
+
+# install dependencies
+npm install
+```
 
 To use gulp tasks you need to have gulp command available globally (`npm i gulp -g`) or you can use gulp from node_modules directory:
 
+```bash
+./node_modules/.bin/gulp
 ```
-node_modules/.bin/gulp
-```
 
-For coverage information, you have to install `babel-cli`
-
-### What is included
-
-- support for es6 (ECMAScript 2015)
-- automatic code transpilation (with code change detection)
-- bundling into single file
-- uglify 
-- tests setup (running in console/browser)
-- code coverage using `istanbul`
+For coverage information, you have to install `babel-cli` globally.
 
 ### Usage
 
-To build final bundle (both minified and not minified) just type `npm run build`. 
-You can configure destination of the bundle in `Gulpfile.js` file.
+To build final bundle (both minified and not minified) just type (in your console):
 
-To watch for changes in source files and auto-build type `npm run watch` or `gulp watch`.
+```bash
+npm run build
+```
 
-To run tests in console type `npm test`. If you want to run tests in the browser type `npm run build-browser-tests-bundle`
+You can configure destination of the bundle in `Gulpfile.js` file. By default it will be created in ```build``` directory.
+
+To watch for changes in source files and auto-build type 
+
+```bash
+npm run watch
+
+# or
+gulp watch
+```
+
+To run tests in console type 
+
+```bash
+npm test
+```
+
+If you want to run tests in the browser type 
+
+```bash
+npm run build-browser-tests-bundle
+```
 and open tests.html in your browser.
 
-To get coverage of your code type `npm run coverage`.
+To get coverage of your code type 
+
+```bash
+npm run coverage
+```
+
+### What should work out of the box:
+
+- ES6 (ECMAScript 2015) syntax in application code and tests (browserify, babel)
+- code transpilation after change detection (gulp, watchify, babel)
+- bundling into a single file (browserify)
+- bundling with minification (browserify, gulp-uglify) 
+- running tests from both console and browser (mocha, browserify)
+- getting code coverage (istanbul)
