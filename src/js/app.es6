@@ -18,3 +18,5 @@ for(let str of opr.pretty) {
 
 root.appendChild(ulElem);
 
+// Library API
+export const hello = () => 'Hello World!';

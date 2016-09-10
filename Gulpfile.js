@@ -59,6 +59,8 @@ gulp.task('watch', function () {
         debug: true,
         extensions: ['es6'],
         entries: ['src/js/app.es6'],
+        // single global variable for the library
+        standalone: 'LibraryName',
         cache: {},
         packageCache: {},
         plugin: [watchify]
@@ -78,7 +80,9 @@ gulp.task('js', function () {
     bundle(browserify({
         debug: true,
         extensions: ['es6'],
-        entries: ['src/js/app.es6']
+        entries: ['src/js/app.es6'],
+        // single global variable for the library
+        standalone: 'LibraryName'
     }))
 });
 

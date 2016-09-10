@@ -15,3 +15,4 @@ node_modules/.bin/gulp
 - automatic code transpilation (with code change detection)
 - bundling into single file
 - uglify 
+- tests setup (running in console/browser)
