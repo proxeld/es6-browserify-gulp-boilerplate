@@ -1,0 +1,29 @@
+{
+  "name": "y",
+  "version": "0.0.1",
+  "description": "Template for the project using ES6, Gulp and Browserify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "es6",
+    "babel",
+    "gulp",
+    "browserify",
+    "watchify"
+  ],
+  "author": "Maciej (proxeld) Urbanek",
+  "license": "MIT License",
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-util": "~3.0.7",
+    "gulp-uglify": "~2.0.0",
+    "browserify": "~13.1.0",
+    "vinyl-source-stream": "~1.1.0",
+    "babelify": "~7.3.0",
+    "watchify": "~3.7.0",
+    "gulp-rename": "~1.2.2",
+    "vinyl-buffer": "~1.0.0"
+  }
+}
