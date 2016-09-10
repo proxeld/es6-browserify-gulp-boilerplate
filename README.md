@@ -1,5 +1,5 @@
-es6-gulp-browserify-template
-============================
+es6-browserify-gulp-boilerplate
+===============================
 
 ### Getting started
 
@@ -20,6 +20,27 @@ To use gulp tasks you need to have gulp command available globally (`npm i gulp 
 
 For coverage information, you have to install `babel-cli` globally.
 
+### Project structure
+
+This is the directory structure you will end up with following the instructions in the Installation Guide.
+
+    |-- src 
+    |   |-- js
+    |       |-- app.es6
+    |       |-- ...
+    |-- test
+    |-- build
+    |-- Gulpfile.js
+    |-- tests.html
+    |-- ...
+
+* `src/js` - all source code of the application
+* `src/js/app.es6` - main entry point of the application (for bundling)
+* `test` - directory with all tests
+* `build` - output directory created automatically. Contains bundles (minified/normal)
+* `Gulpfile.js` - gulp tasks configuration
+* `tests.html` - in-browser test runner
+
 ### Usage
 
 To build final bundle (both minified and not minified) just type (in your console):
@@ -30,7 +51,7 @@ npm run build
 
 You can configure destination of the bundle in `Gulpfile.js` file. By default it will be created in ```build``` directory.
 
-To watch for changes in source files and auto-build type 
+To watch for changes in source files and auto-build type:
 
 ```bash
 npm run watch
@@ -39,20 +60,20 @@ npm run watch
 gulp watch
 ```
 
-To run tests in console type 
+To run tests in console type:
 
 ```bash
 npm test
 ```
 
-If you want to run tests in the browser type 
+If you want to run tests in the browser type:
 
 ```bash
 npm run build-browser-tests-bundle
 ```
 and open tests.html in your browser.
 
-To get coverage of your code type 
+To get coverage of your code type:
 
 ```bash
 npm run coverage

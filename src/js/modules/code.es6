@@ -3,24 +3,24 @@ const movies = [
         title: 'Star Wars: Episode III - Revenge of the Sith',
         year: 2005,
         director: 'George Lucas',
-        genre: 'Adventure, Sci-Fi'
+        genre: 'Adventure, Sci-Fi',
     },
     {
         title: 'Interstellar',
         year: 2014,
         director: 'Christopher Nolan',
-        genre: 'Adventure, Drama, Sci-Fi'
+        genre: 'Adventure, Drama, Sci-Fi',
     },
     {
         title: 'Juno',
         year: 2007,
         director: 'Jason Reitman',
-        genre: 'Comedy, Drama, Romance'
-    }
+        genre: 'Comedy, Drama, Romance',
+    },
 ];
 
 export const pretty = movies.map(movie => {
-    let {title, year, director} = movie;
+    const { title, year, director } = movie;
 
     return `${title} (${year}), ${director}`;
 });
