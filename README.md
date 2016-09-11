@@ -66,6 +66,12 @@ To run tests in console type:
 npm test
 ```
 
+In order to re-run tests automatically after change detection type:
+
+```bash
+npm run test-watch
+```
+
 If you want to run tests in the browser type:
 
 ```bash
